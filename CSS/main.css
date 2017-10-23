@@ -1,0 +1,60 @@
+/* La fuente general será sans-serif*/
+body{
+  font-family: sans-serif;
+}
+/* El ancho de la etiqueta de nuestra barra de navegación es de 200px*/
+nav{
+  width: 200px;
+}
+/*Seleccionamos nuestra lista desordenada*/
+ul{
+  /*Le retiramos la viñeta del punto*/
+  list-style: none;
+  /*Quitamos el margen y el padding que por defecto trae*/
+  margin: 0;
+  padding: 0;
+  /*Le damos espacio entre líneas de 30 píxeles*/
+  line-height: 30px;
+}
+/*Seleccionamos los elementos de lista*/
+li{
+/*Le cambiamos el color de fondo a gris*/
+  background-color: #f5f5f0;
+}
+/*Seleccionamos el primer elemento con la pseudoclase first child*/
+ul li:first-child{
+/*Le cambiamos el color de fondo al de Laboratoria*/
+  background-color: #f9a91a;
+}
+/*Seleeccionamos los elementos de enlaces*/
+a{
+/*Le cambiamos el tipo de elemento a bloque para poder manipular su tamaño*/
+display: block;
+/*Le quitamos el subrayado*/
+text-decoration: none;
+/*Color de fuente negro*/
+color: #000;
+/*Le añadimos relleno a la izquierda de 10px*/
+padding-left: 10px;
+}
+/*Efecto al sobrevolar el link ==> se le cambia el color de fondo a un gris más oscuro*/
+a:hover{
+  background-color:#e0e0d1;
+}
+/*Efecto al hacer click en el link ==> color de fondo oscuro casi negro y color de fuente blanco*/
+a:active{
+  background-color: #333;
+  color:#fff;
+}
+/*seleccionamos el primer elemento de la lista y le cambiamos el color de la fuente al texto del enlace*/
+ul li:first-child a{
+  color: #fff;
+}
+/*Efecto al sobrevolar el link del primer item ===> El color de fuente se vuelve negro*/
+ul li:first-child a:hover{
+color:#000;
+}
+/*Efecto al hacer click en el link del primer item ===> El color de fuente se vuelve blanco*/
+ul li:first-child a:active{
+  color: #fff;
+}
